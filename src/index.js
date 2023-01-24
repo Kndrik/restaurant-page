@@ -1,3 +1,4 @@
-import { showHome, hideHome } from "./home";
+import { showHome } from "./home";
+import './style.css';
 
 showHome();

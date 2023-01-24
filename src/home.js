@@ -1,3 +1,5 @@
+import Photo from '../imgs/image.jpg';
+
 const homeDiv = document.createElement('div');
 homeDiv.classList.add('home');
 const leftDiv = document.createElement('div');
@@ -8,8 +10,8 @@ const title = document.createElement('h1');
 title.textContent = 'Taco House';
 const description = document.createElement('div');
 description.textContent = "We make the best Tacos in town. Don't believe us? come try it.";
-const img = document.createElement('img');
-img.src = '../imgs/image.jpg';
+const img = new Image();
+img.src = Photo;
 img.alt = 'A hand pressing lemon on tacos';
 
 const content = document.querySelector('#content');
@@ -22,8 +24,4 @@ export function showHome() {
     homeDiv.appendChild(rightDiv);
 
     content.appendChild(homeDiv);
-}
-
-export function hideHome() {
-    content.removeChild(homeDiv);
 }
