@@ -1,1 +1,3 @@
-console.log('Hello');
+import { showHome, hideHome } from "./home";
+
+showHome();
