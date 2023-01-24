@@ -39,10 +39,46 @@ ul {
     gap: 80px;
 }
 
-a {
+li {
     color: white;
     list-style: none;
     font-size: 24px;
-    text-decoration: none;
     font-weight: bold;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.dish {
+    width: 350px;
+}
+
+.dish .top {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+.top .name {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.top .price {
+    font-size: 16px;
+}
+
+.dish div:last-child {
+    font-style: italic;
+
 }
