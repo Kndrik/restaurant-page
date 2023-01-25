@@ -64,7 +64,8 @@ li:hover {
 .dish .top {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(119, 119, 119);
+    border-bottom-style: dashed;
     align-items: flex-end;
     margin-bottom: 10px;
 }
@@ -81,4 +82,29 @@ li:hover {
 .dish div:last-child {
     font-style: italic;
 
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.panel {
+    width: 250px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.panel div:first-child {
+    font-weight: bold;
+    font-size: 24px;
 }

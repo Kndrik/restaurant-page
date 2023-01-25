@@ -1,9 +1,9 @@
 import { showHome } from "./home";
 import { showMenu } from "./menu";
+import { showContact } from "./contact";
 import './style.css';
 
 showHome();
-//showMenu();
 
 const homeButton = document.querySelector('#home');
 const menuButton = document.querySelector('#menu');
@@ -17,6 +17,11 @@ homeButton.addEventListener('click', () => {
 menuButton.addEventListener('click', () => {
     removeContent();
     showMenu();
+})
+
+contactButton.addEventListener('click', () => {
+    removeContent();
+    showContact();
 })
 
 function removeContent() {
